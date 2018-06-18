@@ -1,129 +1,108 @@
 
 /*--------------------------------------------Colors*/
 
+.bg-light {
+    background-color: #f7f1de;
+}
+
+.nina {
+    background-color: #f7f1de;
+}
 
 /*--------------------------------------------Special Paddings/Margins/Text*/
-.container {
-    padding: 80px 120px;
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-}
-.person:hover {
-    border-color: #f1f1f1;
+p{
+    margin: 40;
 }
 
-/*--------------------------------------------Heading*/
-
-body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  h3, h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 20px;
-      color: #111;
-  }
-  .container {
-      padding: 80px 120px;
-
-/* Remove rounded borders on input fields */
-.form-control {
-    border-radius: 0;
+.general-sub {
+    font-family:'Roboto', sans-serif;
+    font-weight:300;
+    color: #fafafa;
 }
 
-/* Disable the ability to resize textareas */
-textarea {
-    resize: none;
+.inline-block {
+    display: inline-block;
+}
+
+.clearfix{
+    padding-left: 0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+
+
+#container {
+   height:100%;
+}
+
+html, body {
+height: 100%;
 }
 
 /*--------------------------------------------Hover*/
 
-/*--------------------------------------------Footer*/
+.hvr-sweep-to-bottom:before{
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
 
-  footer {
-      background-color: #2d2d30;
-      color: #f5f5f5;
-      padding: 32px;
-  }
-  footer a {
-      color: #f5f5f5;
-  }
-  footer a:hover {
-      color: #777;
-      text-decoration: none;
-  }  
-  .form-control {
-      border-radius: 0;
-  }
-  textarea {
-      resize: none;
-  }
-
-
-/*--------------------------------------------Body*/
-
-
-
-/*--------------------------------------------Carousel*/
-.carousel-inner img {
-      -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
+}
 
 /*--------------------------------------------Navbar*/
 
- .navbar {
-      font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
-      background-color: #2d2d30;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
+
+/* When resized mobile will collapse navbar */
+@media (max-width: 767px) {
+  .navbar-toggleable-sm {
+    clear: both;
   }
-  .navbar li a, .navbar .navbar-brand { 
-      color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-      color: #fff !important;
-  }
-  .navbar-nav li.active a {
-      color: #fff !important;
-      background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-  .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-      color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-      background-color: red !important;
-  }
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.bg-light {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
 
 
 
+/*--------------------------------------------Footer*/
+
+footer {;
+position: relative;
+    bottom:0;
+    left:0;
+    width:100%;
+background-color: #E3D1C4;
+    color: white;
+    min-height: 120px;
+    margin: auto
+
+
+}
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
 
 /*--------------------------------------------Media Queries*/
 
@@ -142,11 +121,73 @@ textarea {
 
 }
 
-/*--------------------------------------------Google Map*/
 
- #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }
+@media (max-width: 768px) { 
+    .carousel .carousel-inner .item {
+        width: 100%;
+ 
+    }
+}
+/*
+.d-block {
+    display: block!important;
+    height: 250px;
+       padding-top: 30px;
+}*/
+
+
+
+/*--------------------------------------------About*/
+
+#about.container {
+  background-color: #f9e5d7;
+   display: table;
+   margin: 50px 50px 50px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+}
+
+/*--------------------------------------------Band Members*/
+
+
+
+/*--------------------------------------------Body*/
+
+a {
+  color:blue;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+a:hover { color:red; }
+
+/*--------------------------------------------Music*/
+
+/* add a little bottom space under the images */
+.thumbnail {
+	margin-bottom:7px;
+}
+
+.list-inline li{
+    padding: 20;
+    list-style: none;
+}
+
+/*--------------------------------------------Documentary*/
+
